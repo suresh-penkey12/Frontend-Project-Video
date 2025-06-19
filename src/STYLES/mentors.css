@@ -1,0 +1,128 @@
+.ment{
+    min-height: 100vh;
+    padding: 20px;
+    /* align-self:self-end; */
+    /* margin-left: 30%; */
+    /* border: 2px solid black; */
+}
+.cards{
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+    margin-right: 20%; 
+    width: 80%;
+}
+.carrd{
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+    padding:10px; 
+    /* width: 100%; */
+    
+}
+.skilled{
+    padding: 5px 10px;
+    background-color: var(--background-color);
+    border-radius: 20px;
+}
+.skill-map{
+    display: flex;
+    gap:16px;
+    
+}
+.pagination-main{
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    gap:0px;
+}
+.pagination-main .steps{
+    background-color: var(--secondary-color);
+    color:white;
+    border-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding:10px 15px;
+}
+.pagination-main .page{
+    padding: 10px 15px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media screen and (min-width:600px) and (max-width:1150px){
+    .ment{
+       margin:0% auto;
+    }
+    .cards{
+        display: flex !important;
+        align-items: center;
+        margin-left: 10%;
+    }
+    .carrd{
+        /* display: flex;
+        flex-direction: column;
+        align-self: center; */
+        
+    }
+    .pagination-main{
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width:670px){
+    .ment{
+        margin:3% auto;
+        margin-left: -5%;
+    }
+    .cards{
+        display: flex;
+        /* flex-direction: column !important; */
+        max-width: 100vw;
+        align-self: center;
+        /* margin: 5% 5%; */
+        /* margin-left: 5%; */
+        margin: 0% 10%;
+    }
+    .carrd div img{
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+    .carrd{
+        /* margin-right: 20% !important; */
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .profile-btn{
+        height: 50px;
+        width: 100px;
+        text-align: center;
+    }
+    /* .skills{
+        padding: 3px 6px;
+        background-color: red;
+    }
+     */
+     span{
+        font-size: 1rem;
+        padding: 0px;
+        border-radius: 10px;
+
+     }
+     .skill-map{
+        max-width: 50%;
+        display: flex;
+        gap:5px;
+     }
+     .pagination-main{
+        width: 90vw;
+        margin-left: 15%;
+     }
+     .pagination-main .steps{
+        padding:5px 5px;
+     }
+     .pagination-main .page{
+        padding: 9px 9px;
+     }
+}

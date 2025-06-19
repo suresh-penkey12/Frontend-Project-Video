@@ -1,0 +1,217 @@
+$primary-color: #0d6efd;
+$border-color: #ddd;
+
+body {
+    background: var(--background-color); // Very light gradient
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+  }
+.leftpart-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 2%;
+  gap: 10px;
+}
+
+.left-section {
+  .profile-card {
+    padding: 20vh 50px;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    background: linear-gradient(135deg, #007bff, #0056b3); 
+  }
+  .profile-card img {
+    position: absolute;
+    top:45%;
+    left:10%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    // margin-bottom: 5%;
+    background: linear-gradient(135deg, #007bff, #0056b3); 
+  }
+
+  .profile-details {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    // background: linear-gradient(135deg, #007bff, #0056b3); // Bl
+  }
+
+  .profile-details h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .profile-details h6 {
+    color: var(--text-color);
+  }
+
+  .skills {
+    margin-top: 10px;
+  }
+
+  .skills h5 {
+    margin-bottom: 5px;
+  }
+
+  .skills .skill-list {
+    display: flex;
+    gap: 10px;
+    margin-top: 0;
+  }
+
+  .skills .skill-list p {
+    padding: 5px 10px;
+    background-color: var(--border-color);
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+
+  .info p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+  }
+
+  .info p i {
+    color: var(--secondary-color);
+  }
+}
+
+.right-section {
+  border: 2px solid var(--border-color);
+  padding: 10px;
+  border-radius: 20px;
+  margin-right: 5%;
+  height: 55vh;
+  margin-top: 5%;
+  position: sticky;
+  top:0%;
+}
+
+.right-section p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  // color: var(--text-color);
+}
+
+.right-section .membership-details h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.right-section .membership-details p {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.right-section .benefits p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1rem;
+}
+
+.right-section .benefits p i {
+  color: var(--secondary-color);
+}
+
+.right-section .buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.right-section .buttons .btn {
+  width: 25%;
+  color: var(--background-color);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.right-section .buttons .btn:hover{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.right-section .buttons .btn-primary {
+  background-color: var(--secondary-color);
+}
+
+.toast-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 10px;
+  padding: 15px;
+  width: 200px;
+  height: 30px;
+}
+@media (max-width: 1024px) {
+  .leftpart-container {
+    grid-template-columns: 1fr;
+  }
+  .left-section .profile-card{
+    margin-bottom: 10%;
+    height: 30vh;
+  }
+  .left-section .profile-card img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top:40%;
+    left:10%;
+  }
+  .right-section{
+     margin-left: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-section .profile-card {
+    padding: 5vh 30px;
+  }
+
+  .right-section {
+    margin-right: 0;
+    height: auto;
+    position: static;
+  }
+}
+
+@media (max-width: 500px) {
+  .profile-card{
+    margin-right: 5%;
+  }
+  .right-section{
+    margin: 0% 7%;
+  }
+  .skills .skill-list p{
+    // background-color: red !important;
+    font-size: 0.8rem !important;
+    padding: 5px 10px !important;
+    width: 30vw !important;
+  }
+
+  .left-section .profile-card img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .right-section .buttons .btn {
+    width: 100%;
+  }
+
+  .left-section .profile-details h3 {
+    font-size: 1.2rem;
+  }
+
+  .left-section .profile-details h6,
+  .right-section p {
+    font-size: 1rem;
+  }
+}

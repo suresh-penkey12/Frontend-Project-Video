@@ -1,0 +1,21 @@
+.requesting{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    margin-top: 20px;
+}
+.requesting button:hover{
+    background-color: var(--primary-color);
+}
+@media screen and (max-width:600px) {
+    .requesting{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        button{
+            width: 70vw;
+        }
+    }
+
+}

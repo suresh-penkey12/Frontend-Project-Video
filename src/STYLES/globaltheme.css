@@ -1,0 +1,22 @@
+:root{
+    --primary-color:#F5F5F5;
+    --secondary-color:#0d6efd;
+    --bs-primary: var(--secondary-color); /* Bootstrap primary button */
+    --third-color:#071952;
+    --fourth-color:#E0E0E0;
+    --border-color:#ddd;
+    --text-color:#000000;
+    --hover-color:#1565c0;
+    --background-color:white;
+}
+[data-theme='dark'] {
+    --primary-color: #1c1c1c; /* Dark gray for headers or primary sections */
+    --secondary-color: #0d6efd; /* Keep Bootstrap primary as it is */
+    --bs-primary: var(--secondary-color);
+    --third-color: #0a2647; /* Darker blue tone */
+    --fourth-color: #FAFAFA; /* Darker gray for secondary areas */
+    --border-color: #444; /* Slightly lighter for visible borders */
+    --text-color: #ffffff; /* White text for better contrast */
+    --hover-color: #1e88e5; /* Lighter blue for better visibility on dark background */
+    --background-color: #121212; /* Standard dark theme background */
+  }

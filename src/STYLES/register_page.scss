@@ -1,0 +1,129 @@
+.register-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 50px;
+    margin-top: 0%;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  }
+  
+  .logo-section {
+    padding: 10%;
+    background-color: #cfe2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-section img {
+    width: 300px;
+    height: 200px;
+  }
+  
+  .register-form {
+    width: 400px;
+    margin-right: 10%;
+  }
+  
+  .card {
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .btn-primary {
+    background-color: var(--secondary-color);
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--hover-color);
+  }
+  
+  @media (max-width: 576px) {
+    .register-container {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .logo-section {
+      padding: 10px;
+      margin-bottom: 2%;
+    }
+  
+    .logo-section img {
+      width: 200px;
+      height: 150px;
+    }
+  
+    .register-form {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .card {
+      padding: 20px;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 577px to 768px) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .register-container {
+      padding: 30px;
+    }
+  
+    .logo-section img {
+      width: 120px;
+      height: 180px;
+    }
+  
+    .register-form {
+      width: 80%;
+    }
+  
+    .card {
+      padding: 25px;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 769px to 992px) */
+  @media (min-width: 769px) and (max-width: 992px) {
+    .register-container {
+      padding: 40px;
+    }
+  
+    .logo-section img {
+      width: 180px;
+      height: 190px;
+    }
+  
+    .register-form {
+      width: 60%;
+    }
+  }
+  
+  /* Large devices (desktops, 993px and up) */
+  @media (min-width: 993px) {
+    .register-container {
+      padding: 50px;
+    }
+  
+    .logo-section img {
+      width: 200px;
+      height: 100px;
+    }
+  
+    .register-form {
+      width: 400px;
+      margin-right: 10%;
+    }
+  
+    .card {
+      padding: 30px;
+    }
+  }

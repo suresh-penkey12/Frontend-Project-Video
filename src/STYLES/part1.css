@@ -1,0 +1,133 @@
+.search-bar {
+    padding: 0.5rem;      
+    width: 60%;           
+    border-color: var(--fourth-color); 
+    border-radius: 8px;   
+    outline: none;        
+  }
+  
+  /* Add focus effect if needed */
+  .search-bar:focus {
+    border-color: var(--secondary-color); 
+  }
+  .custom-btn {
+    padding: 0.5rem;            
+    background-color: var(--secondary-color); 
+    color: var(--text-color);               
+    border: var(--fourth-color);               
+    border-radius: 8px;         
+    cursor: pointer;            
+    font-size: 1rem;            
+  }
+  
+  .custom-btn:hover {
+    background-color: var(--hover-color); /* Darker blue on hover */
+  }
+@media  screen and (min-width:830px) and (max-width:1020px) {
+    .Scroll_cards{
+        display: none;
+    }
+    .effect{
+        display: flex;
+        gap:20px;
+        width: 70vw;
+    }
+    .search{
+        display: block !important;
+        width: 50%;
+        /* border: 2px solid black; */
+    }
+    .main{
+        width: 100vw;
+    }
+    .custom-btn{
+        padding: 0.6rem;
+    }
+    
+}
+@media screen and (min-width:610px) and (max-width:830px){
+    .Scroll_cards{
+        display: none;
+    }
+    .effect{
+        display: flex;
+        gap:30px;
+        width: 100vw;
+    }
+    .search{
+        display: block !important;
+        width: 100%;
+    }
+    .main{
+        width: 100vw;
+    }
+    .custom-btn{
+        padding: 0.6rem;
+    }
+}
+@media screen and (min-width:500px) and (max-width:610px) {
+    .Scroll_cards{
+        display: none;
+    }
+    .search{
+        display: block !important;
+        width: 100vw;
+    }
+    .effect{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    input{
+        width: 70vw;
+    }
+    .main{
+        /* border: 2px solid black; */
+        width: 100vw;
+    }
+    .buttonss{
+        display: none;
+    }
+    .custom-btn{
+        padding: 0.6rem;
+    }
+
+}
+@media screen and (max-width:500px) {
+    .search-bar{
+        width: 100%;
+        border:none;
+    }
+    .custom-btn{
+        width: 100%;
+        border-radius: 8px;
+    }
+    .buttonss{
+        display: none;
+    }
+    .Scroll_cards{
+        display: none;
+    }
+    .search{
+        display: block !important;
+        width: 100vw !important;
+        border: 2px solid var(--border-color);
+        /* border: 2px solid black; */
+    }
+    .effect{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .main{
+        width: 100vw;
+        margin:5% auto;
+        align-self: center;
+    }
+    /* .btnof{
+        width: 20%;
+        font-size: 0.6rem;
+    } */
+    
+    
+}

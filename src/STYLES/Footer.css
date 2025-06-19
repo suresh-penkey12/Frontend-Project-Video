@@ -1,0 +1,40 @@
+.img {
+    max-width: 120px;
+    height: auto;
+  }
+  .row h3{
+    font-size: 1.5rem;
+  }
+  .row p{
+    font-size: 1.1rem;
+  }
+  .rowww h5{
+    font-size: 1.5rem;
+  }
+  .rowww a{
+    font-size: 1.1rem;
+  }
+  .roww h5{
+    font-size: 1.5rem;
+  }
+  .roww i{
+    font-size: 1.3rem;
+  }
+  .roww i:hover{
+    color: var(--secondary-color);
+  }
+  .rowi p{
+    font-size: 1.3rem;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .img {
+      max-width: 200px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .img {
+      max-width: 300px !important;
+    }
+  }

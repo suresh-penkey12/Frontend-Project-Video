@@ -1,0 +1,50 @@
+.profile-container {
+    max-width: 600px;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  
+    .profile-image {
+        width: 220px;   // Increase size
+        height: 250px;  // Keep it equal to width
+        object-fit: cover;  // Ensures image fills the space properly
+        border-radius: 50%; // Makes it a perfect circle
+        border: 5px solid #ddd; // Optional: Adds a nice border
+        margin-bottom: 20px;
+      }
+    h3 {
+      color: black;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  
+    p {
+      font-size: 16px;
+      color: black;
+    }
+  
+    .text-muted {
+      font-size: 14px;
+      color: black;
+    }
+  
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+  
+      .skill-badge {
+        background: #007bff;
+        color: white;
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 14px;
+      }
+    }
+  }
+  
